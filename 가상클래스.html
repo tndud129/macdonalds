@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0; padding: 0; box-sizing:border-box;}
+        a{text-decoration: none; color: inherit;}
+        ul, ol, li{list-style: none;}
+
+        h1{
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        ul{text-align: center;}
+
+        ul li{
+            display: inline-block;
+            border: 1px solid salmon;
+        }
+
+        ul li a{
+            display: inline-block;
+            padding: 30px 50px;
+            border: 1px solid rgb(255, 42, 113);
+        }
+
+        ul li a::before{content: "★"; color: yellowgreen; font-size: 30px;}
+
+
+        ul li a::after{
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: url('img/btn_close.png') no-repeat;
+            background-size: cover;
+            display: inline-block;
+        }
+
+        ul li::before{
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 1px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        ul li::after{
+            content: "";
+            display:    block;
+            width: 1px;
+            height: 10px;
+            background-color: blue;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>가상 클래스 만들기</h1>
+    <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+        <li><a href="#">menu5</a></li>
+    </ul>
+</body>
+</html>
